@@ -9,27 +9,38 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #7c7c7c;
+  background-image: url(./image/marius-masalar-CyFBmFEsytU-unsplash.jpg);
 }
 form {
-  height: auto;
-  width: 30%;
-  background: rgba(252, 172, 80, 0.589);
+  height: 800px;
+  width: 40%;
+  background: rgba(223, 211, 198, 0.589);
   border-radius: 20px;
-  text-align: center;
+  text-align: center;  
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 label {
   display: block;
 }
+input {
+  border-radius: 40px;
+}
+select {
+  border-radius: 40px;
+}
+button {
+  width: 50%;
+  height: 30px;
+
+}
 .genre-container input {
   display: inline-block;
 }
-.genre-container span{
-    display: inline-block;
+.genre-container span {
+  display: inline-block;
 }
 span {
   display: block;

@@ -30,7 +30,7 @@ const ageChecker = (value) => {
 };
 const socialChecker = (value) => {
   if (!value.match(/^[1|2]+[0-9]{12}$/)) {
-    errorDisplay("social", "le code postal n'est pas valide");
+    errorDisplay("social", "le numéro de secu n'est pas valide");
   } else {
     errorDisplay("social", "", true);
   }
@@ -63,8 +63,6 @@ inputs.forEach((input) => {
     }
     let deliv = document.getElementById("deliv");
     let validity = document.getElementById("validity");
-    console.log(deliv.value);
-    console.log(validity.value);
 
     if (deliv.value > validity.value) {
       errorDisplay("validity", "Passport expiré");
@@ -73,9 +71,3 @@ inputs.forEach((input) => {
     }
   });
 });
-
-// let button = document.querySelector("button");
-
-// button.addEventListener("click", () => {
-//   MediaEncryptedEvent.preventDefault();
-// });
