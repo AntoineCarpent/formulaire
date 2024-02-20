@@ -42,6 +42,13 @@ const mailChecker = (value) => {
     errorDisplay("email", "", true);
   }
 };
+const passportChecker = (value) => {
+  if (!value.match(/^[0-9]{2}[A-Z]{2}[0-9]{5}$/)) {
+    errorDisplay("passport", "Le numero n'est pas valide");
+  } else {
+    errorDisplay("passport", "", true);
+  }
+};
 
 inputs.forEach((input) => {
   input.addEventListener("input", (e) => {
@@ -57,6 +64,9 @@ inputs.forEach((input) => {
         break;
       case "age":
         ageChecker(e.target.value);
+        break;
+      case "passport":
+        passportChecker(e.target.value);
         break;
       default:
         null;
